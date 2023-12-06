@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0 ;
+}
+
+.sidebar {
+    height: 60px;
+    background-color: rgb(19, 19, 19);
+    position: fixed;
+    font-family: 'Fira Sans', sans-serif;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.sidebar h2{
+    font-size: 25px;
+    color: skyblue;
+    font-weight: 700;
+    margin: 12px 0 0 40px;
+    filter: drop-shadow(0 2px 10px rgb(58, 113, 214));
+}
+
+.sidebar nav{
+    display: flex;
+    flex-direction: row;
+    margin-right: 50px;
+    margin: 2px;
+}
+
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 22px;
+    padding: 10px 30px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.sidebar nav li:hover {
+    font-size: 25px;
+    font-weight: 400;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.49);
+    border-radius: 3px;
+    transition:0.5s;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./Assets/Indexbg.jpeg);
+    background-size: cover;
+}
+
+.infoContainer {
+    position: absolute;
+    top: 10%;
+    left: 40%;
+    height: 58vh;
+    margin: 144px auto;
+    display: flex;
+    flex-direction: column;
+    animation: in-style 2s ease-in-out;
+}
+
+@keyframes in-style {
+
+    0%{
+        transform: translate(900px, 0px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+
+}
+
+.devInfo {
+    filter: drop-shadow(0 0 5px #375578);
+    animation: glow 1s alternate infinite;
+    color: white;
+    justify-content: center;
+    font-family: 'Source Code Pro', monospace;
+}
+
+.devPic img {
+    height: 58vh;
+}
+
+.hello {
+    font-size: 65px;
+
+}
+
+.name {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 40px;
+}
+
+.moreabout {
+    font-size: 18px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 23px;
+
+}
+
+.btn {
+    margin-top: 34px;
+
+
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    font-size: 21px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.btn:hover {
+   box-shadow: 0 0 12px rgb(255, 255, 255);
+   transition: 0.2s;
+}
+
+.btn {
+    background: linear-gradient(45deg, #f09433 0%,
+            #e6683c 25%, #990011 50%, #8a549f 75%, #2316d8 100%);
+}
+
+
+.info-det{
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    font-family: 'Fira Sans', sans-serif;
+    cursor: default;
+}
+.break{
+    background-color: #302f2f;
+    height: 10px;
+    width: 100%;
+}
+
+.about-s{
+    position: relative;
+    left: 34%;
+    top: 10%;
+    font-weight: 500;
+    font-size: 60px;
+    color: rgb(92, 90, 183);
+    padding: 10px;
+}
+.line{
+    margin-left: 100px;
+    position: relative;
+    top: -25%;
+    left: 5%;
+    height: 2px;
+    width: 70vh;
+    background-color: #555353;
+    rotate: 90deg;
+}
+
+.main-pic{
+    position: relative;
+    top: 10vh;
+    left: 30px;
+    height: 60vh;
+    width: 50vh;
+    filter: drop-shadow(0px 0px 30px #686161);
+}
+.con-info{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.side-img{
+    height: 90vh;
+    width: 95%;
+}
+
+.para-info p{
+    position: absolute;
+    right: 15vh;
+    width: 120vh;
+    margin-top: 10vh;
+    font-size: 30px;
+    font-weight: 400;
+    color: #edc5c5;
+}
+
+.pro-con{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.project{
+    cursor: pointer;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.158);
+    margin: 40px;
+    border-radius: 8px;
+    border: none;
+    
+}
+
+.pro-con>div:hover{
+    box-shadow: 0 0px 30px #78a4d6;
+    transition: 0.4s;
+}
+.image{
+    height: 230px;
+    width: 230px;
+    margin: 15px 0 5px 35px;
+}
+
+.des{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.project h2{
+    color: #fff;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.image img{
+    height: 210px;
+    width: 220px;
+    border: 2px solid #000;
+    border-radius: 8px;
+}
+
+.des p{
+    margin: 10px 12px 20px 12px;
+}
+
+
+/*Skills section*/
+
+.info-det h1{
+    position: relative;
+    left: 40%;
+    top: 5%;
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600; 
+}
+
+.container-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+.skill-info h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 16px;
+}
+.progress-bar{
+    background: #959595;
+    width: 900px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div{
+    height: 10px;
+    border-radius: 5px;
+    width: 90%;
+}
+
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #000;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.html{
+    background: #e91e63;
+    animation: html 1s linear forwards;
+}
+
+.js{
+    background: #cddc39;
+    animation: js 1s linear forwards;
+}
+.Python{
+    background: #00bcd4;
+    animation: Python 1s linear forwards;
+}
+.C{
+    background: #ffeb3b;
+    animation: c 1s linear forwards;
+}
+.Cpp{
+    background: #9c27b0;
+    animation: Cpp 1s linear forwards;
+}
+.Java{
+    background: rgb(62, 11, 87);
+    animation: Java 1s linear forwards;
+}
+
+.html span{
+    border: 1px solid #e91e63;
+}
+
+.js span{
+    border: 1px solid #cddc39;
+}
+
+.Python span{
+    border: 1px solid #00bcd4;
+}
+
+.C span{
+    border: 1px solid #ffeb3b;
+}
+.Cpp span{
+    border: 1px solid #9c27b0;
+}
+.Java span{
+    border: 1px solid rgb(62, 11, 87);
+}
+
+@keyframes html {
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 85%;
+    }
+}
+@keyframes js{
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 57%;
+    }
+}
+@keyframes Python {
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 35%;
+    }
+}
+
+@keyframes c {
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 46%;
+    }
+}
+@keyframes Cpp {
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 25%;
+    }
+}
+
+@keyframes Java {
+    0%,50%{
+        width: 0%;
+    }
+    100%{
+        width: 16%;
+    }
+}
+
+/*Footer*/
+.form-con{
+    overflow-x: hidden;
+    background: #000;
+    background-size: cover;
+    width: 100%;
+    height: 90vh;
+}
+.nav{
+    position:relative;
+    top: 10%;
+    left: 20%;
+}
+
+.nav h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(160, 203, 212);
+}
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(126, 190, 144);
+    width: 800px;
+}
+
+.mb-3 input{
+    font-family: 'Quicksand', sans-serif;
+    background: transparent;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+    padding: 7px;
+    font-size: 20px;
+    font-weight: 200;
+    border: 0.2mm solid rgb(107, 103, 103);
+    margin: 5px;
+}
+
+#emailHelp{
+    margin-top: 5px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #608580;
+}
+
+.form-label{
+    font-size: 25px;
+    margin: 0 0 2px 5px;
+}
+
+
+#form-check{
+    margin-left: 5px;
+    color: #608580;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#form-check input{
+    cursor: pointer;
+}
+
+.contact-btn{
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    height: 40px;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width: 120px;
+    border: 0.1mm solid #fff;
+    background-color: transparent;
+    color: #FFf;
+    border-radius: 8px;
+}
+
+.nav form button:hover{
+    background-color: #fff;
+    color: gray;
+    border: 0.1mm solid white;
+    transition-delay: 0.1s;
+    transition-property: inherit;
+}
+
+.nav-img img {
+    background-color: #000;
+    height: 200px;
+    width: 100px;
+}
+
+
